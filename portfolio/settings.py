@@ -110,7 +110,7 @@ STATIC_URL = 'static/'
 
 # 1. Endroits où Django va CHERCHER vos fichiers statiques (Bootstrap, vos CSS)
 STATICFILES_DIRS = [
-    BASE_DIR / 'static',
+    BASE_DIR / 'mainapp' / 'static',
     # Ou si votre dossier static se trouve à l'intérieur de mainapp:
     # BASE_DIR / 'mainapp' / 'static',
 ]
