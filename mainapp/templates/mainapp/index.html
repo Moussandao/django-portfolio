@@ -1,0 +1,412 @@
+{% extends 'mainapp/layout.html' %}
+{% load static %}
+
+{% block title %}Ndao Moussa Ndene | Développeur Web Fullstack{% endblock %}
+
+{% block content %}
+
+<!-- HERO SECTION -->
+<section id="about" class="py-5 px-5 mb-5 border-bottom border-2 border-dark">
+    <div class="row align-items-center gy-4">
+        <div class="col-lg-8">
+            <div class="d-inline-block bg-dark text-white px-3 py-1 mb-3 fw-bold rounded-0 text-uppercase tracking-wide fs-7">
+                Disponible pour opportunités & missions
+            </div>
+            <h1 class="display-3 fw-black text-uppercase text-dark mb-3 lh-1">
+                Développeur Web <br><span class="text-decoration-underline">Fullstack</span>
+            </h1>
+            <h3 class="text-muted fw-normal fs-5 mt-1">
+                 <span class="badge bg-light text-dark border">🤖 AI-Augmented Developer</span>
+            </h3>
+            <p class="fs-5 text-dark mb-4 pe-lg-5">
+                Spécialisé dans l'architecture web moderne, la création d'applications web réactives et de Progressive Web Apps (PWA) rapides et fiables. Je transforme des problématiques complexes en solutions logicielles performantes.
+            </p>
+            <div class="d-flex flex-wrap gap-3 align-items-center">
+                <a href="#projects" class="btn-brutal fs-5">
+                    Voir mes réalisations <i class="bi bi-arrow-down-right ms-1"></i>
+                </a>
+                <a href="#contact" class="btn-brutal btn-brutal-secondary fs-5">
+                    Me contacter
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-4 text-center">
+            <div class="p-4 card-brutal bg-white d-inline-block text-start">
+                <h5 class="fw-bold text-uppercase border-bottom border-2 border-dark pb-2 mb-3">
+                    <i class="bi bi-cpu-fill me-2"></i>Stack Principale
+                </h5>
+                <ul class="list-unstyled mb-0 fw-semibold">
+                    <li class="py-1"><i class="bi bi-check2-square me-2"></i>Python / Django</li>
+                    <li class="py-1"><i class="bi bi-check2-square me-2"></i>JavaScript (ES6+) / React</li>
+                    <li class="py-1"><i class="bi bi-check2-square me-2"></i>PWA / Offline-First</li>
+                    <li class="py-1"><i class="bi bi-check2-square me-2"></i>Tailwind CSS / Bootstrap</li>
+                    <li class="py-1"><i class="bi bi-check2-square me-2"></i>PostgreSQL / Supabase</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION À PROPOS -->
+<section id="about-me" class="py-5 px-5 mb-5 border-bottom border-2 border-dark">
+    <div class="d-flex align-items-center justify-content-between mb-4">
+        <h2 class="fs-1 fw-bold text-uppercase mb-0">À Propos De Moi</h2>
+        <span class="badge-brutal fs-6">00 // PARCOURS</span>
+    </div>
+
+    <div class="row g-4 align-items-stretch">
+        <!-- Bio & Présentation -->
+        <div class="col-lg-7">
+            <div class="card-brutal p-4 h-100 bg-white">
+                <h3 class="fw-bold text-uppercase fs-4 mb-3 border-bottom border-2 border-dark pb-2">
+                    <i class="bi bi-person-badge me-2"></i>Développeur Web & Concepteur de Solutions
+                </h3>
+                <p class="fs-6 text-dark mb-3 lh-lg">
+                    Passionné par le développement web et l'ingénierie logicielle, je me spécialise dans la création d'applications web modernes, réactives et performantes. Mon approche combine une solide base technique avec une vision orientée produit, garantissant des solutions adaptées aux besoins réels des utilisateurs.
+                </p>
+                <p class="fs-6 text-dark mb-4 lh-lg">
+                    Concepteur d'initiatives comme <strong>SoluTeK+</strong> et d'applications métier sur mesure (telles que <em>BayeGanaar</em> ou <em>AgroLux</em>), j'accorde une attention particulière aux architectures <strong>PWA (Progressive Web Apps)</strong>, au mode offline-first et à la fluidité des interfaces utilisateur.
+                </p>
+                
+                <div class="p-3 bg-light border border-2 border-dark font-monospace fs-7">
+                    <i class="bi bi-terminal-fill me-2"></i><strong>Philosophie :</strong> Transformer des défis techniques complexes en outils numériques simples, rapides et accessibles à tous.
+                </div>
+            </div>
+        </div>
+
+        <!-- Informations Clés & Formation -->
+        <div class="col-lg-5">
+            <div class="d-flex flex-column gap-4 h-100">
+                <!-- Bloc Formation & Focus -->
+                <div class="card-brutal p-4 bg-white flex-grow-1">
+                    <h4 class="fw-bold text-uppercase fs-5 border-bottom border-2 border-dark pb-2 mb-3">
+                        <i class="bi bi-mortarboard-fill me-2"></i>Formation & Spécialités
+                    </h4>
+                    <ul class="list-unstyled mb-0 fw-semibold fs-7">
+                        <li class="py-2 border-bottom border-1 border-dark">
+                            <span class="text-uppercase text-decoration-underline d-block">Formation initiale</span>
+                            <span>Mathématiques & Informatique (Bac+1)</span>
+                        </li>
+                        <li class="py-2 border-bottom border-1 border-dark">
+                            <span class="text-uppercase text-decoration-underline d-block">Spécialisation Web</span>
+                            <span>Architecture Fullstack (Django, React, JS ES6+)</span>
+                        </li>
+                        <li class="py-2">
+                            <span class="text-uppercase text-decoration-underline d-block">Domaines d'expertise</span>
+                            <span>Création de sites web modernes, Progressive Web Apps (PWA), SaaS, Intégration d'APIs</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Chiffres Clés / Points Forts -->
+                <div class="row g-2">
+                    <div class="col-6">
+                        <div class="card-brutal p-3 bg-dark text-white text-center">
+                            <div class="fs-3 fw-bold">Fullstack</div>
+                            <div class="fs-7 text-uppercase">Python & JS</div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card-brutal p-3 bg-white text-dark text-center">
+                            <div class="fs-3 fw-bold">Offline-1st</div>
+                            <div class="fs-7 text-uppercase">Approche PWA</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION COMPÉTENCES -->
+<section id="skills" class="py-5 px-5 mb-5 border-bottom border-2 border-dark">
+    <div class="d-flex align-items-center justify-content-between mb-4">
+        <h2 class="fs-1 fw-bold text-uppercase mb-0">Compétences Techniques</h2>
+        <span class="badge-brutal fs-6">01 // DOMAINES</span>
+    </div>
+
+    <div class="row g-4">
+        <!-- Frontend -->
+        <div class="col-md-6 col-lg-3">
+            <div class="card-brutal p-4 h-100">
+                <div class="fs-2 mb-2"><i class="bi bi-code-slash"></i></div>
+                <h4 class="fw-bold text-uppercase fs-5 border-bottom border-2 border-dark pb-2">Frontend</h4>
+                <div class="mt-3">
+                    {% for skill in skills %}
+                        {% if skill.category == 'FRONTEND' %}
+                            <span class="badge-brutal">{{ skill.name }}</span>
+                        {% endif %}
+                    {% empty %}
+                        <span class="badge-brutal">JavaScript</span>
+                        <span class="badge-brutal">React</span>
+                        <span class="badge-brutal">HTML5 / CSS3</span>
+                        <span class="badge-brutal">Tailwind CSS</span>
+                        <span class="badge-brutal">Bootstrap</span>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="col-md-6 col-lg-3">
+            <div class="card-brutal p-4 h-100">
+                <div class="fs-2 mb-2"><i class="bi bi-server"></i></div>
+                <h4 class="fw-bold text-uppercase fs-5 border-bottom border-2 border-dark pb-2">Backend</h4>
+                <div class="mt-3">
+                    {% for skill in skills %}
+                        {% if skill.category == 'BACKEND' %}
+                            <span class="badge-brutal">{{ skill.name }}</span>
+                        {% endif %}
+                    {% empty %}
+                        <span class="badge-brutal">Python</span>
+                        <span class="badge-brutal">Django / ORM</span>
+                        <span class="badge-brutal">REST APIs</span>
+                        <span class="badge-brutal">Node.js</span>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <!-- Database & Cloud -->
+        <div class="col-md-6 col-lg-3">
+            <div class="card-brutal p-4 h-100">
+                <div class="fs-2 mb-2"><i class="bi bi-database"></i></div>
+                <h4 class="fw-bold text-uppercase fs-5 border-bottom border-2 border-dark pb-2">Bases de données</h4>
+                <div class="mt-3">
+                    {% for skill in skills %}
+                        {% if skill.category == 'DATABASE' %}
+                            <span class="badge-brutal">{{ skill.name }}</span>
+                        {% endif %}
+                    {% empty %}
+                        <span class="badge-brutal">PostgreSQL</span>
+                        <span class="badge-brutal">SQLite</span>
+                        <span class="badge-brutal">Supabase</span>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <!-- Tools & Arch -->
+        <div class="col-md-6 col-lg-3">
+            <div class="card-brutal p-4 h-100">
+                <div class="fs-2 mb-2"><i class="bi bi-tools"></i></div>
+                <h4 class="fw-bold text-uppercase fs-5 border-bottom border-2 border-dark pb-2">Outils & Web</h4>
+                <div class="mt-3">
+                    {% for skill in skills %}
+                        {% if skill.category == 'TOOLS' %}
+                            <span class="badge-brutal">{{ skill.name }}</span>
+                        {% endif %}
+                    {% empty %}
+                        <span class="badge-brutal">Git / GitHub</span>
+                        <span class="badge-brutal">PWA</span>
+                        <span class="badge-brutal">VS Code</span>
+                        <span class="badge-brutal">Linux</span>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION PROJETS -->
+<section id="projects" class="py-5 px-5 mb-5 border-bottom border-2 border-dark">
+    <div class="d-flex align-items-center justify-content-between mb-4">
+        <div>
+            <h2 class="fs-1 fw-bold text-uppercase mb-0">Projets & Réalisations</h2>
+            <p class="text-muted mb-0">Une sélection de projets web fullstack et PWA à forte valeur ajoutée.</p>
+        </div>
+        <span class="badge-brutal fs-6">02 // PORTFOLIO</span>
+    </div>
+
+    <div class="row g-4">
+        {% for project in projects %}
+        <div class="col-lg-6">
+            <div class="card-brutal h-100 p-0 overflow-hidden d-flex flex-column">
+                {% if project.image %}
+                <div class="border-bottom border-2 border-dark bg-light position-relative">
+                    <img src="{{ project.image.url }}" alt="{{ project.title }}" class="img-fluid w-100 object-fit-cover" style="max-height: 260px;">
+                    {% if project.is_featured %}
+                    <span class="position-absolute top-0 end-0 bg-dark text-white fw-bold px-3 py-1 m-2 border border-2 border-dark fs-7 text-uppercase">
+                        En Vedette
+                    </span>
+                    {% endif %}
+                </div>
+                {% endif %}
+                
+                <div class="p-4 d-flex flex-column flex-grow-1">
+                    <span class="fw-bold text-uppercase text-decoration-underline mb-1 fs-7">{{ project.subtitle }}</span>
+                    <h3 class="fw-bold text-uppercase fs-3 mb-2">{{ project.title }}</h3>
+                    
+                    <p class="mb-3 text-dark flex-grow-1">
+                        {{ project.description }}
+                    </p>
+
+                    {% if project.architecture_details %}
+                    <div class="p-3 bg-light border border-2 border-dark mb-3 fs-7 font-monospace">
+                        <strong>Détails techniques :</strong> {{ project.architecture_details }}
+                    </div>
+                    {% endif %}
+
+                    <div class="mb-3">
+                        {% for skill in project.skills.all %}
+                        <span class="badge-brutal">{{ skill.name }}</span>
+                        {% endfor %}
+                    </div>
+
+                    <div class="d-flex flex-wrap gap-2 pt-2 border-top border-2 border-dark mt-auto">
+                        {% if project.live_url %}
+                        <a href="{{ project.live_url }}" target="_blank" class="btn-brutal fs-7 py-2">
+                            <i class="bi bi-box-arrow-up-right me-1"></i> DÉMO EN LIGNE
+                        </a>
+                        {% endif %}
+                        
+                        {% if project.github_url %}
+                        <a href="{{ project.github_url }}" target="_blank" class="btn-brutal btn-brutal-secondary fs-7 py-2">
+                            <i class="bi bi-github me-1"></i> CODE SOURCE
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <!-- Exemple statique de fallback si aucun projet n'est encore enregistré dans la DB -->
+        <div class="col-lg-6">
+            <div class="card-brutal h-100 p-4 d-flex flex-column">
+                <span class="fw-bold text-uppercase text-decoration-underline mb-1 fs-7">Application PWA & SaaS</span>
+                <h3 class="fw-bold text-uppercase fs-3 mb-2">BayeGanaar</h3>
+                <p class="mb-3 text-dark">
+                    Plateforme PWA dédiée à la gestion d'exploitations avicoles : suivi des lots, rapport de dépenses, exportation PDF et gestion des abonnements.
+                </p>
+                <div class="p-3 bg-light border border-2 border-dark mb-3 fs-7 font-monospace">
+                    <strong>Détails techniques :</strong> Progressive Web App offline-first, génération de rapports PDF dynamiques, intégration API de paiement.
+                </div>
+                <div class="mb-3">
+                    <span class="badge-brutal">JavaScript</span>
+                    <span class="badge-brutal">PWA</span>
+                    <span class="badge-brutal">Django</span>
+                    <span class="badge-brutal">Supabase</span>
+                </div>
+                <div class="d-flex gap-2 pt-2 border-top border-2 border-dark mt-auto">
+                    <a href="#" class="btn-brutal fs-7 py-2"><i class="bi bi-box-arrow-up-right me-1"></i> DÉMO</a>
+                    <a href="#" class="btn-brutal btn-brutal-secondary fs-7 py-2"><i class="bi bi-github me-1"></i> GITHUB</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="card-brutal h-100 p-4 d-flex flex-column">
+                <span class="fw-bold text-uppercase text-decoration-underline mb-1 fs-7">Single Page Application</span>
+                <h3 class="fw-bold text-uppercase fs-3 mb-2">E-Commerce & Enchères CS50</h3>
+                <p class="mb-3 text-dark">
+                    Plateforme d'enchères en ligne développée avec le framework Django : création d'offres, système d'enchères en temps réel, listes de favoris et commentaires.
+                </p>
+                <div class="p-3 bg-light border border-2 border-dark mb-3 fs-7 font-monospace">
+                    <strong>Détails techniques :</strong> Modèles Django ORM complexes, architecture MVC, formulaires dynamiques et gestion d'authentification complète.
+                </div>
+                <div class="mb-3">
+                    <span class="badge-brutal">Python</span>
+                    <span class="badge-brutal">Django</span>
+                    <span class="badge-brutal">Bootstrap</span>
+                    <span class="badge-brutal">SQLite</span>
+                </div>
+                <div class="d-flex gap-2 pt-2 border-top border-2 border-dark mt-auto">
+                    <a href="#" class="btn-brutal fs-7 py-2"><i class="bi bi-box-arrow-up-right me-1"></i> DÉMO</a>
+                    <a href="#" class="btn-brutal btn-brutal-secondary fs-7 py-2"><i class="bi bi-github me-1"></i> GITHUB</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- SECTION CONTACT -->
+<section id="contact" class="py-5 px-5">
+    <div class="row gy-4">
+        <div class="col-lg-5">
+            <span class="badge-brutal fs-6 mb-2">03 // CONTACT</span>
+            <h2 class="display-5 fw-bold text-uppercase mb-3">Travaillons <br>Ensemble</h2>
+            <p class="fs-5 text-dark mb-4">
+                Vous avez un projet web, besoin d'une application sur mesure ou une opportunité de recrutement ? Laissez-moi un message.
+            </p>
+            <div class="p-4 card-brutal bg-white">
+                <!-- Bloc Email -->
+                <div class="d-flex align-items-center mb-3">
+                    <i class="bi bi-envelope-fill fs-4 me-3"></i>
+                    <div class="w-100">
+                        <div class="fw-bold text-uppercase fs-7">Email</div>
+                        <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mt-1">
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ndaomoussa07@gmail.com" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="text-dark fw-bold text-decoration-underline">
+                                ndaomoussa07@gmail.com
+                            </a>
+                            <button type="button" 
+                                    id="copy-email-btn"
+                                    class="btn btn-sm btn-outline-dark rounded-0 px-2 py-1 fs-7 fw-bold text-uppercase">
+                                <i class="bi bi-clipboard me-1"></i> Copier
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bloc GitHub -->
+                <div class="d-flex align-items-center pt-3 border-top border-2 border-dark">
+                    <i class="bi bi-github fs-4 me-3"></i>
+                    <div class="w-100">
+                        <div class="fw-bold text-uppercase fs-7">GitHub</div>
+                        <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mt-1">
+                            <a href="https://github.com/Moussandao" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="text-dark fw-bold text-decoration-underline">
+                                github.com/Moussandao
+                            </a>
+                            <a href="https://github.com/Moussandao" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="btn btn-sm btn-outline-dark rounded-0 px-2 py-1 fs-7 fw-bold text-uppercase">
+                                <i class="bi bi-box-arrow-up-right me-1"></i> Voir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-7">
+            <div class="card-brutal p-4 bg-white">
+                <form id="contact-form" action="{% url 'contact_ajax' %}" method="POST">
+                    {% csrf_token %}
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="name" class="form-label fw-bold text-uppercase fs-7">Nom complet *</label>
+                            <input type="text" class="form-control border-2 border-dark rounded-0 p-2" id="name" name="name" required placeholder="Ex: Adama Dibane">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label fw-bold text-uppercase fs-7">Adresse Email *</label>
+                            <input type="email" class="form-control border-2 border-dark rounded-0 p-2" id="email" name="email" required placeholder="nom@exemple.com">
+                        </div>
+                        <div class="col-12">
+                            <label for="subject" class="form-label fw-bold text-uppercase fs-7">Sujet *</label>
+                            <input type="text" class="form-control border-2 border-dark rounded-0 p-2" id="subject" name="subject" required placeholder="Ex: Proposition de projet / Opportunité">
+                        </div>
+                        <div class="col-12">
+                            <label for="message" class="form-label fw-bold text-uppercase fs-7">Message *</label>
+                            <textarea class="form-control border-2 border-dark rounded-0 p-2" id="message" name="message" rows="5" required placeholder="Décrivez brièvement votre projet ou votre besoin..."></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn-brutal w-100 py-3 fs-5">
+                                ENVOYER LE MESSAGE <i class="bi bi-send-fill ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div id="form-response"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

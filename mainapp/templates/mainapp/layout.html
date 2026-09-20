@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Portfolio Fullstack | Python & JS{% endblock %}</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom High-Contrast CSS -->
+    <link rel="stylesheet" href="{% static 'mainapp/css/style.css' %}">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <nav class="navbar navbar-expand-lg border-bottom border-2 border-dark bg-white sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-dark fs-4" href="#">Ndao Moussa Ndene</a>
+            <button class="navbar-toggler border-2 border-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-3 fw-bold">
+                    <li class="nav-item"><a class="nav-link text-dark" href="#about-me">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#skills">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#projects">Projets</a></li>
+                    <li class="nav-item"><a class="btn-brutal" href="#contact">Me contacter</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    {% block content %}{% endblock %}
+
+    <!-- Footer -->
+<footer class="border-top border-3 border-dark py-4 bg-white mt-5">
+    <div class="container">
+        <div class="row align-items-center gy-3 text-center text-md-start">
+            
+            <!-- Colonne 1 : Branding & Statut -->
+            <div class="col-md-6">
+                <p class="mb-1 fw-bold fs-5">Ndao Moussa Ndene</p>
+                <div class="d-inline-flex align-items-center gap-2 border border-2 border-dark px-2 py-1 rounded bg-light">
+                    <span class="spinner-grow spinner-grow-sm text-success" role="status" aria-hidden="true" style="width: 10px; height: 10px;"></span>
+                    <span class="fw-bold small text-dark">Disponible pour de nouveaux projets</span>
+                </div>
+            </div>
+
+            <!-- Colonne 2 : Navigation rapide & Réseaux -->
+            <div class="col-md-6 text-md-end">
+                <div class="d-flex justify-content-center justify-content-md-end gap-3 mb-2 fw-bold">
+                    <a href="https://github.com/Moussandao" target="_blank" rel="noopener" class="text-dark text-decoration-none border-bottom border-2 border-dark">GitHub</a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ndaomoussa07@gmail.com" target="_blank" rel="noopener" class="text-dark text-decoration-none border-bottom border-2 border-dark">
+                           Email
+                    </a>
+                    <a href="#about-me" class="text-dark text-decoration-none border-bottom border-2 border-dark">À propos</a>
+                </div>
+                <p class="mb-0 small fw-semibold text-muted">
+                    © {% now "Y" %} — Développeur Web Fullstack & AI-Augmented 🤖
+                </p>
+            </div>
+
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'mainapp/js/main.js' %}"></script>
+</body>
+</html>
