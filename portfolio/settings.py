@@ -17,7 +17,8 @@ DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 
 ALLOWED_HOSTS = [
     'moussandenefullstack-dev.onrender.com',
-    '.onrender.com',  # Autorise tous les sous-domaines Render
+    '.onrender.com',
+    '.pythonanywhere.com',  # Autorise tous les sous-domaines Render
     'localhost',
     '127.0.0.1',
 ]
@@ -105,21 +106,18 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # ==========================================
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
-# 1. Endroits où Django va CHERCHER vos fichiers statiques (Bootstrap, vos CSS)
+# 1. Point vers le dossier static à la racine de ton projet
 STATICFILES_DIRS = [
-    BASE_DIR / 'mainapp' / 'CSS' / 'static',
-    # Ou si votre dossier static se trouve à l'intérieur de mainapp:
-    # BASE_DIR / 'mainapp' / 'static',
+    BASE_DIR / 'static',
 ]
 
 # 2. Dossier où Django RASSEMBLE tout lors de "python manage.py collectstatic"
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-# 3. Moteur WhiteNoise pour servir le CSS/JS compressé sur Render
+# 3. Moteur WhiteNoise pour servir le CSS/JS compressé
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
-
 
 # ==========================================
 # Email Configuration
